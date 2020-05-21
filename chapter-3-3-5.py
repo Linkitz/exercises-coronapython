@@ -6,17 +6,24 @@
 #
 # • Print a second set of invitation messages, one for each person who is still in your list.
 
-# Exercise 3-4
-presidents = ["Obama", "Lula", "Merkel"]
-print("Hey, " + presidents[0] + " i am making dinner, please come!")
-print("Hey, " + presidents[1] + " i am making dinner, please come!")
-print("Hey, " + presidents[2] + " i am making dinner, please come!")
+strangeperson = ['Strange Nº 1', 'Strange Nº 2', 'Strange Nº 3']
 
-print("Hey, " + presidents[2] + " can't make it.")
+print("Yoooo! " + strangeperson[0] + ", let's dinner!")
+print("Yoooo! " + strangeperson[1] + ", let's dinner!")
+print("Yoooo! " + strangeperson[2] + ", let's dinner!")
 
-presidents.remove(presidents[2])
-presidents.insert(2,"Macron")
+popedperson = strangeperson.pop(1)
 
-print("Hey, " + presidents[0] + " i am making dinner, please come!")
-print("Hey, " + presidents[1] + " i am making dinner, please come!")
-print("Hey, " + presidents[2] + " i am making dinner, please come!")
+print("Unfortunately " + popedperson + " could not join us.")
+
+addguest = 'Strange Nº 4'
+
+strangeperson.insert(1,addguest)
+
+print(addguest + " is the new guest!")
+
+print("Yoooo! " + strangeperson[0] + ", let's dinner!")
+print("Yoooo! " + strangeperson[1] + ", let's dinner!")
+print("Yoooo! " + strangeperson[2] + ", let's dinner!")
+
+

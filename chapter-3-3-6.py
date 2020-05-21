@@ -11,28 +11,37 @@
 # • Print a new set of invitation messages, one for each person in your list. 
 
 # Exercise 3-5
-presidents = ["Obama", "Lula", "Merkel"]
-print("Hey, " + presidents[0] + " i am making dinner, please come!")
-print("Hey, " + presidents[1] + " i am making dinner, please come!")
-print("Hey, " + presidents[2] + " i am making dinner, please come!")
 
-print("Hey, " + presidents[2] + " can't make it.")
+strangeperson = ['Strange Nº 1', 'Strange Nº 2', 'Strange Nº 3']
 
-presidents.remove(presidents[2])
-presidents.insert(2,"Macron")
+print("Yoooo! " + strangeperson[0] + ", let's dinner!")
+print("Yoooo! " + strangeperson[1] + ", let's dinner!")
+print("Yoooo! " + strangeperson[2] + ", let's dinner!")
 
-print("Hey, " + presidents[0] + " i am making dinner, please come!")
-print("Hey, " + presidents[1] + " i am making dinner, please come!")
-print("Hey, " + presidents[2] + " i am making dinner, please come!")
+popedperson = strangeperson.pop(1)
 
-print("I found a bigger table!")
-presidents.insert(0,"Lincoln")
-presidents.insert(1,"Fernando")
-presidents.append("Boris")
+print("Unfortunately " + popedperson + " could not join us.")
 
-print("Hey, " + presidents[0] + " i am making dinner, please come!")
-print("Hey, " + presidents[1] + " i am making dinner, please come!")
-print("Hey, " + presidents[2] + " i am making dinner, please come!")
-print("Hey, " + presidents[3] + " i am making dinner, please come!")
-print("Hey, " + presidents[4] + " i am making dinner, please come!")
-print("Hey, " + presidents[5] + " i am making dinner, please come!")
+addguest = 'Strange Nº 4'
+
+strangeperson.insert(1,addguest)
+
+print(addguest + " is the new guest!")
+
+print("Yoooo! " + strangeperson[0] + ", let's dinner!")
+print("Yoooo! " + strangeperson[1] + ", let's dinner!")
+print("Yoooo! " + strangeperson[2] + ", let's dinner!")
+
+# Exercise 3-6
+print("GUYS!!!! I found a bigger dinner table!")
+
+strangeperson.insert(0, 'Strange Nº 5')
+strangeperson.insert(2, 'Strange Nº 6')
+strangeperson.append('Strange Nº 7')
+
+print("Yoooo! " + strangeperson[0] + ", let's dinner!")
+print("Yoooo! " + strangeperson[1] + ", let's dinner!")
+print("Yoooo! " + strangeperson[2] + ", let's dinner!")
+print("Yoooo! " + strangeperson[3] + ", let's dinner!")
+print("Yoooo! " + strangeperson[4] + ", let's dinner!")
+print("Yoooo! " + strangeperson[5] + ", let's dinner!")

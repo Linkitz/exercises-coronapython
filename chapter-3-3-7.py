@@ -9,49 +9,49 @@
 # • Use del to remove the last two names from your list, so you have an empty list. Print your list to make sure you actually have an empty list at the end of your program.
 
 # Exercise 3-6
-presidents = ["Obama", "Lula", "Merkel"]
-print("Hey, " + presidents[0] + " i am making dinner, please come!")
-print("Hey, " + presidents[1] + " i am making dinner, please come!")
-print("Hey, " + presidents[2] + " i am making dinner, please come!")
 
-print("Hey, " + presidents[2] + " can't make it.")
+strangeperson = ['Strange Nº 1', 'Strange Nº 2', 'Strange Nº 3']
 
-presidents.remove(presidents[2])
-presidents.insert(2,"Macron")
+print("Yoooo! " + strangeperson[0] + ", let's dinner!")
+print("Yoooo! " + strangeperson[1] + ", let's dinner!")
+print("Yoooo! " + strangeperson[2] + ", let's dinner!")
 
-print("Hey, " + presidents[0] + " i am making dinner, please come!")
-print("Hey, " + presidents[1] + " i am making dinner, please come!")
-print("Hey, " + presidents[2] + " i am making dinner, please come!")
+popedperson = strangeperson.pop(1)
 
-print("I found a bigger table!")
-presidents.insert(0,"Lincoln")
-presidents.insert(1,"Fernando")
-presidents.append("Boris")
+print("Unfortunately " + popedperson + " could not join us.")
 
-print("Hey, " + presidents[0] + " i am making dinner, please come!")
-print("Hey, " + presidents[1] + " i am making dinner, please come!")
-print("Hey, " + presidents[2] + " i am making dinner, please come!")
-print("Hey, " + presidents[3] + " i am making dinner, please come!")
-print("Hey, " + presidents[4] + " i am making dinner, please come!")
-print("Hey, " + presidents[5] + " i am making dinner, please come!")
+addguest = 'Strange Nº 4'
 
-print("Sorry, my table will not arrive in time. I can only invite two people")
+strangeperson.insert(1,addguest)
 
-wontcome = presidents.pop()
-print("Sorry, " + wontcome + " don't come, i dont have space!")
+print(addguest + " is the new guest!")
 
-wontcome = presidents.pop()
-print("Sorry, " + wontcome + " don't come, i dont have space!")
+print("Yoooo! " + strangeperson[0] + ", let's dinner!")
+print("Yoooo! " + strangeperson[1] + ", let's dinner!")
+print("Yoooo! " + strangeperson[2] + ", let's dinner!")
 
-wontcome = presidents.pop()
-print("Sorry, " + wontcome + " don't come, i dont have space!")
+print("GUYS!!!! I found a bigger dinner table!")
 
-wontcome = presidents.pop()
-print("Sorry, " + wontcome + " don't come, i dont have space!")
+strangeperson.insert(0, 'Strange Nº 5')
+strangeperson.insert(2, 'Strange Nº 6')
+strangeperson.append('Strange Nº 7')
 
-print("Hey, " + presidents[0] + " i am making dinner, please come!")
-print("Hey, " + presidents[1] + " i am making dinner, please come!")
+print("Yoooo! " + strangeperson[0] + ", let's dinner!")
+print("Yoooo! " + strangeperson[1] + ", let's dinner!")
+print("Yoooo! " + strangeperson[2] + ", let's dinner!")
+print("Yoooo! " + strangeperson[3] + ", let's dinner!")
+print("Yoooo! " + strangeperson[4] + ", let's dinner!")
+print("Yoooo! " + strangeperson[5] + ", let's dinner!")
 
-del presidents[1]
-del presidents[0]
-print(presidents)
+# Exercise 3-7
+print ("Sorry guys, I can only invite 2 persons.")
+
+print(strangeperson.pop() + " left.")
+print(strangeperson.pop() + " left.")
+print(strangeperson.pop() + " left.")
+print(strangeperson.pop() + " left.")
+
+print (strangeperson[0] + " you still in!")
+print (strangeperson[1] + " you still in!")
+
+del strangeperson
