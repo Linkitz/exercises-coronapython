@@ -10,8 +10,10 @@ friend_pizzas.append("Chief")
 #
 # • Prove that you have two separate lists. Print the message, My favorite pizzas are:, and then use a for loop to print the first list. Print the message, My friend’s favorite pizzas are:, and then use a for loop to print the second list. Make sure each new pizza is stored in the appropriate list.
 
+print("My favorite pizzas are: ")
 for pizza in my_pizzas:
-    print("My favorite pizzas are: " + pizza)
+    print(pizza)
 
+print("My friend’s favorite pizzas are: ")
 for pizza in friend_pizzas:
-    print("My friend’s favorite pizzas are: " + pizza)
+    print(pizza)

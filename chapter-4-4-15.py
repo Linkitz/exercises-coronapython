@@ -6,23 +6,19 @@
 #
 # • Don’t use blank lines excessively in your program files.
 
-# Exercise 4-7
-numbers = range(3,31,3)
-for i in numbers:
-    print(str(i))
+#Exercices 4-6
+oddnumbers = list(range(1,21,2))
 
-# Exercise 4-9
-complist = [i**3 for i in range(1,11)]
-print(complist)
+for oddnumber in oddnumbers:
+    print(oddnumber)
 
-# Exercise 4-12
-my_foods = ['pizza', 'falafel', 'carrot cake']
-friend_foods = my_foods[:]
+#Exercices 4-8
+cubes = []
+for value in range(1,11):
+    cubes.append(value**3)
 
-print("My favorite pizzas are: ")
-for i in my_foods:
-    print(i)
+print(cubes)
 
-print("My friend’s favorite foods are: ")
-for i in friend_foods:
-    print(i)
+#Exercices 4-9
+cubes = [value**3 for value in range(1,11)]
+print(cubes)
