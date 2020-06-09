@@ -11,4 +11,10 @@ favorite_languages = {
     'phil': 'python'
    }
 
-poll = {'jen':'python'}
+languages_poll = {'jen':'python','pedro':'Basic','matheus':'c#'}
+
+for name in languages_poll.keys():
+   if name in favorite_languages:
+      print(name.title() + ", thank you for responding!")
+   else:
+      print(name.title()+" let's poll!")
